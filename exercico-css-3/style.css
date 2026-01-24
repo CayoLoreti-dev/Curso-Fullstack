@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1{
+    margin-top: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    
+}
+.explore {
+    padding-bottom: 20px;
+    font-size: 13px;
+}
+
+img {
+    width: 400px;
+}
+
+.titulos {
+    font-size: 25px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 12px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.descubra {
+    padding-bottom: 40px;
+}
+
+
+
+.inscreva {
+    background-color: black;
+    color: white;
+    padding-top: 13px;
+    height: 40px;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+.lista span {
+    font-family: sans-serif;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 10px;
+    background-color: #42aaf5;
+    height: 35px;
+    padding: 10px 0;
+    color: white;
+    width: 110px;
+    border-radius: 50px
+    
+}
+
+.lista span:nth-child(2) {
+  width: 140px;;
+
+}
+
+
+
+.lista span:nth-child(6) {
+    background-color: black;
+    font-weight: bold;
+}
+
+.comece {
+    font-size: 25px;
+    padding: 10px;
+    padding-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.book {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-top: 10px;
+}
+ 
