@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxygen", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+     --color-background: #030207;
+     --color-white: #fff;
+     --color-blue: #1474b4;
+
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-white);
+}
+
+a {
+    color: var(--color-blue)
+}
+
+.hero {
+    /* faz o elemento ficar relativo a outro position */
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--color-background));
+    /* escurece o video com um efeito de gradiente, começa no rgba e termina na cor do var  */
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero__background {
+
+    /* object-fit = faz o objeto se ajustar dentro do container */
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    /* coloca o elemento em posição encima dos demais */
+    position: absolute;
+    /* top = escolher onde deixar o elemento na pagina */
+    top: 0;
+    /* usar o z index negativo= faz o elemento ficar atrás dos demais */
+    z-index: -10;
+}
+
+.hero__foreground {
+    color: var(--color-white);
+    /* paddind 40vh = centraliza o texto bem no meio na página */
+    padding: 40vh;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.hero__text {
+    margin-top: 2rem;
+    /* da espaçamento entre as letras */
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.section {
+    /* oculta a barra de rolagem */
+    overflow: hidden;
+     text-align: center;
+     padding: 0 8rem;
+}
+
+.section__title {
+    font-size: 3rem;
+    font-weight: 300;
+    /* deixa o texto com a margem automatica pra todos os lados  */
+    margin: 4rem auto;
+}
+
+
+.section__img,
+.section__img-inline {
+    border-radius: .75rem;
+    width: 100%;
+    /* eixo x "esquerda e direita, eixo y "cima e baixo", blur "embaçar a sombra", expansão/recuo, cor */
+    box-shadow: 0 1rem 2rem -0.5rem rgba(20,116, 180, 0.25);
+    /* fixa os objetos dentro do container, mesmo se mudar a altura ela n fica torta */
+    object-fit: cover;
+   object-position: top;
+   position: relative;
+   max-height: 30rem;
+}
+
+.section__text
+.section__text-inline {
+    font-size: 1.25rem;
+    line-height: 1.75;
+    margin: 4rem auto;
+}
+
+.section__img-inline {
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    float: left;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    height: 25rem;
+    width: 20rem;
+}
+
+.section__text-inline {
+    text-align: left;
+    margin-top: 6rem;
+}
+
+.section__text-inline > p {
+    margin-top: 1.5rem;
+
+}
+
+#hangouts img {
+    object-position: center;
+}
+
+.gallery__img {
+    border-radius: .75rem;
+    height: 16rem;
+    width: 16rem;
+    object-fit: cover;
+    transform: rotate(-2deg);
+}
+
+.gallery {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.gallery__img-wrapper + .gallery__img-wrapper {
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+
+.gallery__img-wrapper:nth-child(2n) > .gallery__img {
+    transform: rotate(2deg);
+    top: 1rem;
+
+}
+
+.alfinete {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  z-index: 2;
+  pointer-events: none;
+  left: 5px;
+}
